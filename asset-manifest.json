@@ -5,8 +5,8 @@
     "static/js/1.b6faf6fe.chunk.js": "/static/js/1.b6faf6fe.chunk.js",
     "static/js/1.b6faf6fe.chunk.js.map": "/static/js/1.b6faf6fe.chunk.js.map",
     "main.css": "/static/css/main.8d17652e.chunk.css",
-    "main.js": "/static/js/main.fd553ad8.chunk.js",
-    "main.js.map": "/static/js/main.fd553ad8.chunk.js.map",
+    "main.js": "/static/js/main.4ee4064e.chunk.js",
+    "main.js.map": "/static/js/main.4ee4064e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1a2a2b50.js",
     "runtime-main.js.map": "/static/js/runtime-main.1a2a2b50.js.map",
     "static/css/4.8770ffec.chunk.css": "/static/css/4.8770ffec.chunk.css",
@@ -46,6 +46,11 @@
     "static/media/bg-white.webp": "/static/media/bg-white.16d22fa6.webp",
     "static/media/bg_blog_home.6e840d8d.webp": "/static/media/bg_blog_home.6e840d8d.webp",
     "static/media/feedback.svg": "/static/media/feedback.dd8af5ab.svg",
+    "static/media/grab.8fc2f13f.png": "/static/media/grab.8fc2f13f.png",
+    "static/media/logo-circle.8fc2f13f.png": "/static/media/logo-circle.8fc2f13f.png",
+    "static/media/logo-web-black.8fc2f13f.png": "/static/media/logo-web-black.8fc2f13f.png",
+    "static/media/logo-web-white.8fc2f13f.png": "/static/media/logo-web-white.8fc2f13f.png",
+    "static/media/logoMain.8fc2f13f.png": "/static/media/logoMain.8fc2f13f.png",
     "static/media/loship.dd098865.png": "/static/media/loship.dd098865.png",
     "static/media/membership.a165428b.svg": "/static/media/membership.a165428b.svg",
     "static/media/now.52c44945.png": "/static/media/now.52c44945.png"
@@ -55,6 +60,6 @@
     "static/css/4.8770ffec.chunk.css",
     "static/js/4.147016b6.chunk.js",
     "static/css/main.8d17652e.chunk.css",
-    "static/js/main.fd553ad8.chunk.js"
+    "static/js/main.4ee4064e.chunk.js"
   ]
 }
