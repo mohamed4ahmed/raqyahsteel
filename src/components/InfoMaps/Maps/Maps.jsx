@@ -11,7 +11,7 @@ import "leaflet/dist/leaflet.css";
 import { iconSmart } from "./IconMarker";
 import logoImg from "../../../assets/img/logo-web-black.png";
 const Map = () => {
-  const position = [30.1417143, 31.7479228];
+  const position = [24.63528, 46.84773];
   const zoom = 15;
   return (
     <div className="map">
@@ -26,13 +26,14 @@ const Map = () => {
               <div className="info__logo">
                 <img src={logoImg} alt="logo" />
               </div>
-              <div className="info__name">RAQYAH</div>
+              <div className="info__name">RAQYAH STEEL</div>
               <div className="info__address">
-                Address: Al Asher Men Ramadan - Badr, Cairo , Egypt
+                Address: المملكة العربية السعودية , الرياض , السلي , صناعية
+                المجاهد
               </div>
             </div>
           </Popup>
-          <Tooltip>RAQYAH For Metal</Tooltip>
+          <Tooltip>RAQYAH STEEL For Metal</Tooltip>
         </Marker>
       </LeafletMap>
     </div>

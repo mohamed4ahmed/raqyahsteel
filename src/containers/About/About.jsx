@@ -21,7 +21,7 @@ const AboutContainer = () => {
 	}, []);
 
 	useEffect(() => {
-		fetchSinglePost("smart-beam")
+		fetchSinglePost("raqyah-steel")
 			.then((data) => {
 				setSinglePost(data[0]);
 			})

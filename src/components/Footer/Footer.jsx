@@ -3,7 +3,7 @@ import React from "react";
 import { useStyles } from "./Footer.elements";
 import logoImg from "../../assets/img/logo-web-white.png";
 import { NavLink } from "react-router-dom";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const classes = useStyles();
@@ -21,10 +21,10 @@ const Footer = () => {
           </NavLink>
           <div className={classes.footer__center}>
             <div className={classes.footer__centerText}>
-              RAQYAH @ 2022.
+              RAQYAH STEEL @ 2022.
             </div>
             <div className={classes.footer__centerText}>
-            Made with ♥ by:{" "}
+              Made with ♥ by:{" "}
               <a
                 href="https://www.mohamedahmed.ml"
                 target="__blank"
@@ -38,7 +38,8 @@ const Footer = () => {
           <div className={classes.footer__right}>
             <a
               className={classes.footer__rightLink}
-              href="https://www.facebook.com/RAQYA-METAL-106075105169019/"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/profile.php?id=RAQYA-METAL-106075105169019/"
               target="__blank"
               aria-label="Facebook"
             >
@@ -46,11 +47,18 @@ const Footer = () => {
             </a>
             <a
               className={classes.footer__rightLink}
-              href="https://www.instagram.com/raqyametal/"
+              rel="noopener noreferrer"
+              href="https://instagram.com/raqyametal/?utm_medium=copy_link"
               target="__blank"
               aria-label="Instagram"
             >
               <FaInstagram />
+            </a>
+            <a
+              className={classes.footer__rightLink}
+              href="whatsapp://send?text=order-from-website&phone=+201065060411"
+            >
+              <FaWhatsapp />
             </a>
           </div>
         </div>
@@ -60,7 +68,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
 
 // import { Container, Typography } from "@material-ui/core";
 // import React from "react";

@@ -35,7 +35,7 @@ function App() {
           <Route path="/blog/:slug" exact component={SinglePost} />
           <Route path="/products" exact component={Products} />
           <Route path="/products/:slug" exact component={SingleProduct} />
-          <Route path="/stores" exact component={Stores} />
+          <Route path="/contact" exact component={Stores} />
           <Route path="/feedback" exact component={Feedback} />
           <Route path="/membership" exact component={Membership} />
           <Route path="/about" exact component={About} />
@@ -51,5 +51,3 @@ function App() {
 }
 
 export default App;
-
-

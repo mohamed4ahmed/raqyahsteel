@@ -2,7 +2,7 @@
 	height: calc(100vh - 80px);
 	width: 100vw;
 	overflow: hidden;
-	--primary: #fff;
+	--primary: rgb(92, 89, 89);
 	min-height: 100vh;
 	display: -webkit-box;
 	display: flex;
@@ -10,7 +10,7 @@
 	align-items: center;
 	-webkit-box-pack: center;
 	justify-content: center;
-	background: rgba(246, 194, 73, 0.8);
+	background: rgba(239, 130, 62, 0.8);
 }
 
 /**

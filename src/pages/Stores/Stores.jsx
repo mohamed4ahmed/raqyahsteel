@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { InfoMaps, SpinnerBook, Section } from "../../components";
 
@@ -6,7 +5,7 @@ import { online } from "../../data";
 const Stores = () => {
   const [spinner, setSpinner] = useState(true);
   useEffect(() => {
-    document.title = "Store - RAQYAH - For Metal";
+    document.title = "Contact - RAQYAH - For Metal";
   }, []);
 
   useEffect(() => {

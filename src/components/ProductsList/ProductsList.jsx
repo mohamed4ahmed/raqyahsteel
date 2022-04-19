@@ -97,7 +97,7 @@ const ProductsList = ({ products }) => {
                                   variant="contained"
                                   className={`${classes.button} ${classes.buttonProduct}`}
                                 >
-                                  LOOKING FOR DETAILS
+                                  DETAILS
                                 </Button>
                               </Link>
                             </div>
