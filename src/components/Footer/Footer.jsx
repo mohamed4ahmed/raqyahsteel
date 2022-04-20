@@ -39,7 +39,7 @@ const Footer = () => {
             <a
               className={classes.footer__rightLink}
               rel="noopener noreferrer"
-              href="https://www.facebook.com/profile.php?id=RAQYA-METAL-106075105169019/"
+              href="https://www.facebook.com/profile.php?id=Raqyah"
               target="__blank"
               aria-label="Facebook"
             >
@@ -48,7 +48,7 @@ const Footer = () => {
             <a
               className={classes.footer__rightLink}
               rel="noopener noreferrer"
-              href="https://instagram.com/raqyametal/?utm_medium=copy_link"
+              href="https://instagram.com/raqyahsteel/?utm_medium=copy_link"
               target="__blank"
               aria-label="Instagram"
             >
@@ -56,7 +56,7 @@ const Footer = () => {
             </a>
             <a
               className={classes.footer__rightLink}
-              href="whatsapp://send?text=order-from-website&phone=+201065060411"
+              href="whatsapp://send?text=order-from-website&phone=+966540600567"
             >
               <FaWhatsapp />
             </a>

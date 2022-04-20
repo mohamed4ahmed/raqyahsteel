@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 
 import {
-	CircularProgress,
-	Container,
-	Typography,
-	Button,
+  CircularProgress,
+  Container,
+  Typography,
+  Button,
 } from "@material-ui/core";
 import { useStyles } from "./SinglePost.elements";
 
@@ -19,146 +19,146 @@ import { estimateReadingTime } from "../../utils";
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
-	return builder.image(source);
+  return builder.image(source);
 }
 
 const SinglePost = ({ post, recentPosts }) => {
-	const classes = useStyles();
+  const classes = useStyles();
 
-	useEffect(() => {
-		if (post) {
-			document.title = `${post.title} - RAQYAH`;
-		}
-	}, [post]);
+  useEffect(() => {
+    if (post) {
+      document.title = `${post.title} - RAQYAH`;
+    }
+  }, [post]);
 
-	const heroPost = post
-		? [
-				{
-					mainImage: {
-						asset: {
-							url: post.mainImage.asset.url,
-							_id: post.mainImage.asset._id,
-						},
-					},
-					subTitle: "   ",
-					title: "   ",
-				},
-		  ]
-		: null;
+  const heroPost = post
+    ? [
+        {
+          mainImage: {
+            asset: {
+              url: post.mainImage.asset.url,
+              _id: post.mainImage.asset._id,
+            },
+          },
+          subTitle: "   ",
+          title: "   ",
+        },
+      ]
+    : null;
 
-	return (
-		<div className={classes.singlePost}>
-			{!post ? (
-				<div className={classes.spinner}>
-					<CircularProgress />
-				</div>
-			) : (
-				<div>
-					<HeroPage slides={heroPost} idScrollTo="singlePost" />
-					<Element name="singlePost">
-						<div className={classes.postComponent}>
-							<Container maxWidth="lg">
-								<div className={classes.post}>
-									<div className={classes.breadcrumbs}>
-										<Link to="/blog">Blog </Link>
-										<p> | News</p>
-									</div>
-									<div className={classes.header}>
-										<Typography variant="h4" className={classes.headerText}>
-											{post.title}
-										</Typography>
-										<div className={classes.authorDate}>
-											<div className={classes.date}>
-												{new Date(post.publishedAt)
-													.toLocaleDateString("en-GB")
-													.split("/")
-													.join("/")}
-											</div>
-											<div className={classes.author}>
-												<img
-													src={urlFor(post.authorImage).url()}
-													alt={post.name}
-													className={classes.authorImg}
-												/>
-												<a
-												 href="https://www.facebook.com/RAQYA-METAL-106075105169019/"
-												 target="__blank"
-												//  aria-label="Facebook"
-													aria-label="Author"
-													className={classes.authorName}
-												>
-													{post.name}
-												</a>
-											</div>
-										</div>
-									</div>
-									<div className={classes.blockContent}>
-										<BlockContent
-											blocks={post.body}
-											projectId="krn450bd"
-											dataset="production"
-										/>
-									</div>
-								</div>
-							</Container>
-						</div>
-					</Element>
-					<div className={classes.recentPosts}>
-						<Container maxWidth="lg" className={classes.a}>
-							<div className={classes.headerRecentPosts}>
-								<Typography
-									variant="h4"
-									className={classes.headerRecentPostsText}
-								>
-									RECENT ARTICLE
-								</Typography>
-							</div>
-							<div className={classes.postsPreview}>
-								{!recentPosts ? (
-									<div className={classes.spinner}>
-										<CircularProgress />
-									</div>
-								) : (
-									recentPosts.map((postPreview, index) => (
-										<div className={classes.postPreview} key={index}>
-											<Link to="/blog" className={classes.postLink}>
-												<div
-													className={classes.postImg}
-													style={{
-														backgroundImage: `url(${postPreview.mainImage.asset.url})`,
-													}}
-												></div>
-											</Link>
+  return (
+    <div className={classes.singlePost}>
+      {!post ? (
+        <div className={classes.spinner}>
+          <CircularProgress />
+        </div>
+      ) : (
+        <div>
+          <HeroPage slides={heroPost} idScrollTo="singlePost" />
+          <Element name="singlePost">
+            <div className={classes.postComponent}>
+              <Container maxWidth="lg">
+                <div className={classes.post}>
+                  <div className={classes.breadcrumbs}>
+                    <Link to="/blog">Blog </Link>
+                    <p> | News</p>
+                  </div>
+                  <div className={classes.header}>
+                    <Typography variant="h4" className={classes.headerText}>
+                      {post.title}
+                    </Typography>
+                    <div className={classes.authorDate}>
+                      <div className={classes.date}>
+                        {new Date(post.publishedAt)
+                          .toLocaleDateString("en-GB")
+                          .split("/")
+                          .join("/")}
+                      </div>
+                      <div className={classes.author}>
+                        <img
+                          src={urlFor(post.authorImage).url()}
+                          alt={post.name}
+                          className={classes.authorImg}
+                        />
+                        <a
+                          href="https://www.facebook.com/ahmed.elbarbary.908"
+                          target="__blank"
+                          //  aria-label="Facebook"
+                          aria-label="Author"
+                          className={classes.authorName}
+                        >
+                          {post.name}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={classes.blockContent}>
+                    <BlockContent
+                      blocks={post.body}
+                      projectId="krn450bd"
+                      dataset="production"
+                    />
+                  </div>
+                </div>
+              </Container>
+            </div>
+          </Element>
+          <div className={classes.recentPosts}>
+            <Container maxWidth="lg" className={classes.a}>
+              <div className={classes.headerRecentPosts}>
+                <Typography
+                  variant="h4"
+                  className={classes.headerRecentPostsText}
+                >
+                  RECENT ARTICLE
+                </Typography>
+              </div>
+              <div className={classes.postsPreview}>
+                {!recentPosts ? (
+                  <div className={classes.spinner}>
+                    <CircularProgress />
+                  </div>
+                ) : (
+                  recentPosts.map((postPreview, index) => (
+                    <div className={classes.postPreview} key={index}>
+                      <Link to="/blog" className={classes.postLink}>
+                        <div
+                          className={classes.postImg}
+                          style={{
+                            backgroundImage: `url(${postPreview.mainImage.asset.url})`,
+                          }}
+                        ></div>
+                      </Link>
 
-											<div className={classes.content}>
-												<p className={classes.title}>{postPreview.title}</p>
-												<p className={classes.description}>
-													{postPreview.description}
-												</p>
-												<div className={classes.footer}>
-													<Link to={"/blog/" + postPreview.slug.current}>
-														<Button
-															variant="contained"
-															className={classes.button}
-														>
-															see more
-														</Button>
-													</Link>
-													<p className={classes.description}>
-														{estimateReadingTime(postPreview.body)}
-													</p>
-												</div>
-											</div>
-										</div>
-									))
-								)}
-							</div>
-						</Container>
-					</div>
-				</div>
-			)}
-		</div>
-	);
+                      <div className={classes.content}>
+                        <p className={classes.title}>{postPreview.title}</p>
+                        <p className={classes.description}>
+                          {postPreview.description}
+                        </p>
+                        <div className={classes.footer}>
+                          <Link to={"/blog/" + postPreview.slug.current}>
+                            <Button
+                              variant="contained"
+                              className={classes.button}
+                            >
+                              see more
+                            </Button>
+                          </Link>
+                          <p className={classes.description}>
+                            {estimateReadingTime(postPreview.body)}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+            </Container>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default SinglePost;

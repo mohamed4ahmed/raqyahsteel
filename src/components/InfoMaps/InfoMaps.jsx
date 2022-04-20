@@ -19,26 +19,26 @@ const InfoMaps = () => {
               </Typography>
               <div>
                 <Typography variant="h6" className={classes.subTitle}>
-                  Address: As Sulay, 8079, Saudi Arabia, Riyadh 14322, Saudi
-                  Arabia
+                  Address: Saudi Arabia, Riyadh, Alsuly exit 18
                 </Typography>
 
                 <Typography variant="h6" className={classes.subTitle}>
-                  Phone number:{" "}
+                  Phone:{" "}
                   <a href="tel:+966540600567">
                     <FaPhone /> +966540600567
                   </a>
-                  <a href="tel:+966536606915">
-                    <FaPhone /> +966536606915
-                  </a>
                 </Typography>
 
                 <Typography variant="h6" className={classes.subTitle}>
-                  Email:{" "}
+                  Info Email:{" "}
                   <a href="mailto:info@raqyahsteel.com">
                     <MdEmail />
                     info@raqyahsteel.com
                   </a>
+                </Typography>
+
+                <Typography variant="h6" className={classes.subTitle}>
+                  Service Email:{" "}
                   <a href="mailto:A.elbrbry@raqyahsteel.com">
                     <MdEmail />
                     A.elbrbry@raqyahsteel.com
@@ -47,7 +47,7 @@ const InfoMaps = () => {
 
                 <Typography variant="h6" className={classes.subTitle}>
                   WhatsApp:{" "}
-                  <a href="whatsapp://send?text=test&phone=+201065060411">
+                  <a href="whatsapp://send?text=test&phone=+966540600567">
                     <FaWhatsapp /> WhatsApp{" "}
                   </a>
                 </Typography>
@@ -55,10 +55,10 @@ const InfoMaps = () => {
                 <Typography variant="h6" className={classes.subTitle}>
                   Messenger:{" "}
                   <a
-                    href="https://www.messenger.com/t/106075105169019/?messaging_source%3Apages%message_shortlink"
+                    href="https://www.messenger.com/t/1669933166642974/?messaging_source%3Apages%message_shortlink"
                     target="_blank"
                     aria-label="Messenger"
-                    rel="noopener noreferrer" //edit
+                    rel="noreferrer" //edit
                   >
                     <FaFacebookMessenger /> Messenger{" "}
                   </a>
