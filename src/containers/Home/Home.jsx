@@ -42,12 +42,12 @@ import feedbackImg from "../../assets/img/feedback.svg";
 import { AiOutlineStar } from "react-icons/ai";
 
 const feedback = {
-  subHeader: "RAQYAH",
-  header: "RAQYAH service rating",
+  subHeader: "RAQYAH STEEL",
+  header: "RAQYAH STEEL service rating",
   description:
-    "Each of your comments will help RAQYAH improve its service to serve you better!",
+    "Each of your comments will help RAQYAH STEEL improve its service to serve you better!",
   linkBtn: "/feedback",
-  contentBtn: "Evaluate",
+  contentBtn: "Evaluate RAQYAH",
   img: feedbackImg,
   icon: <AiOutlineStar />,
 };
@@ -63,7 +63,7 @@ const Home = () => {
   const instaPosts = useSelector((state) => state.api.instaPosts);
 
   useEffect(() => {
-    document.title = "RAQYAH FOR METAL - HomePage";
+    document.title = "RAQYAH STEEL FOR METAL - HomePage";
   }, []);
 
   useEffect(() => {

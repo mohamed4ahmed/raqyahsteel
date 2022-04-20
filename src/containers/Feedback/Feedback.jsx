@@ -37,16 +37,13 @@ const categoryLabels = [
 		id: "",
 		name: "Select a category",
 	},
-	{
-		id: "no space",
-		name: "No Space",
-	},
+	
 	{
 		id: "price",
 		name: "Price",
 	},
 	{
-		id: "art metal",
+		id: "artmetal",
 		name: "Art Metal",
 	},
 	{
@@ -62,8 +59,8 @@ const categoryLabels = [
 		name: "Timeserver",
 	},
 	{
-		id: "wifi",
-		name: "Wifi",
+		id: "anotherthing",
+		name: "Another Thing",
 	},
 ];
 
@@ -148,7 +145,7 @@ const FeedbackContainer = () => {
 								variant="h4"
 								className={`${classes.headerText} ${classes.headerTextModal}`}
 							>
-								RAQYAH
+								RAQYAH STEEL
 							</Typography>
 							<p className={classes.description}>Thank you for comment!</p>
 							<div className={classes.buttonGroup}>
