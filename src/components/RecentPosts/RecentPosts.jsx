@@ -48,6 +48,7 @@ const RecentPosts = ({ posts }) => {
       <div className={classes.social}>
         <a
           className={`${classes.socialLink} ${classes.facebook}`}
+          rel="noopener noreferrer"
           href="https://www.facebook.com/Raqyah"
           target="__blank"
           aria-label="Facebook"
@@ -56,6 +57,7 @@ const RecentPosts = ({ posts }) => {
         </a>
         <a
           className={`${classes.socialLink} ${classes.instagram}`}
+          rel="noopener noreferrer"
           href="https://instagram.com/raqyahsteel"
           target="__blank"
           aria-label="Instagram"

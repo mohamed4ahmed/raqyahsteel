@@ -81,10 +81,11 @@ const SinglePost = ({ post, recentPosts }) => {
                           className={classes.authorImg}
                         />
                         <a
+                          rel="noopener noreferrer"
                           href="https://www.facebook.com/ahmed.elbarbary.908"
                           target="__blank"
-                           aria-label="Facebook"
-                          // aria-label="Author"
+                          //  aria-label="Facebook"
+                          aria-label="Author"
                           className={classes.authorName}
                         >
                           {post.name}
