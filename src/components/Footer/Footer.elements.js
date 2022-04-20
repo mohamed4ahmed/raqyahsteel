@@ -86,7 +86,10 @@ export const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     color: "#fff",
     fontSize: "32px",
-    "&:nth-child(2,3)": {
+    "&:nth-child(2)": {
+      marginLeft: "15px",
+    },
+    "&:nth-child(3)": {
       marginLeft: "15px",
     },
     "&:hover": {

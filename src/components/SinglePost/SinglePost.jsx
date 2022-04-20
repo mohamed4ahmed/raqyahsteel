@@ -83,8 +83,8 @@ const SinglePost = ({ post, recentPosts }) => {
                         <a
                           href="https://www.facebook.com/ahmed.elbarbary.908"
                           target="__blank"
-                          //  aria-label="Facebook"
-                          aria-label="Author"
+                           aria-label="Facebook"
+                          // aria-label="Author"
                           className={classes.authorName}
                         >
                           {post.name}

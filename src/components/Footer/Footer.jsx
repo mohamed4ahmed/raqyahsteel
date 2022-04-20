@@ -39,7 +39,7 @@ const Footer = () => {
             <a
               className={classes.footer__rightLink}
               rel="noopener noreferrer"
-              href="https://www.facebook.com/profile.php?id=Raqyah"
+              href="https://www.facebook.com/Raqyah"
               target="__blank"
               aria-label="Facebook"
             >
@@ -48,7 +48,7 @@ const Footer = () => {
             <a
               className={classes.footer__rightLink}
               rel="noopener noreferrer"
-              href="https://instagram.com/raqyahsteel/?utm_medium=copy_link"
+              href="https://instagram.com/raqyahsteel"
               target="__blank"
               aria-label="Instagram"
             >
