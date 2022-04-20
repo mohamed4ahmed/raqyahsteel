@@ -84,8 +84,8 @@ const SinglePost = ({ post, recentPosts }) => {
                           rel="noopener noreferrer"
                           href="https://www.raqyah.ga"
                           target="__blank"
-                           aria-label="Facebook"
-                          // aria-label="Author"
+                          //  aria-label="Facebook"
+                          aria-label="Author"
                           className={classes.authorName}
                         >
                           {post.name}
