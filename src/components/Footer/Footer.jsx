@@ -26,7 +26,7 @@ const Footer = () => {
             <div className={classes.footer__centerText}>
               Made with ♥ by:{" "}
               <a
-                href="https://www.mohamedahmed.ml"
+                href="https://mohamed4ahmed.github.io/portfolio"
                 target="__blank"
                 aria-label="Facebook"
                 className={classes.footer__centerMo}
